@@ -4,7 +4,7 @@ kind: Kustomization
 resources:
 - ../../base
 #git::https://github.com/example/repository/?ref=main
-- git::https://github.com/emage-automation/test/00-deploying-application/test-svc.yaml?ref=main
+- git::https://github.com/emage-automation/test/00-deploying-application/?ref=main
 namePrefix: dev-
 nameSuffix: "-001"
 commonLabels:
