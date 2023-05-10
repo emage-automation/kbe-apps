@@ -1,8 +1,10 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 
-bases:
+resources:
 - ../../base
+#git::https://github.com/example/repository/?ref=main
+- git::https://github.com/emage-automation/test/00-deploying-application/test-svc.yaml?ref=main
 namePrefix: dev-
 nameSuffix: "-001"
 commonLabels:
